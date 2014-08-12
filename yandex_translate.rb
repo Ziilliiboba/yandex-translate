@@ -13,17 +13,13 @@ class YandexTranslate
 
 	def detect(text)
 		data = {"text" => text}
-		return Connect.new.get('detect', data)
+		parsed = Connect.new.get('detect', data)
+		return ErrorHandler.new(parsed)
 	end
 
 	def translate(text, lang = 'ru', format = 'plain')
 		data = {"text" => text, "lang" => lang, "format" => format}
-		return Connect.new.get('translate', data)
+		parsed = Connect.new.get('translate', data)
+		return ErrorHandler.new(parsed)
 	end
 end
-
-puts YandexTranslate.new.get_langs #translate('It was a beautiful day to you and me')
-#Yandex_translate.new.detect('Hello world')
-#Yandex_translate.new.translate('She was a young and cute')
-#test={"langs" => 'en', 'bang' => "tears"}
-#print test.keys
