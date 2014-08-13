@@ -1,5 +1,5 @@
 class ResponseError
-	def initialize(code, message)
-		@code, @message = code, message
-	end
+  def initialize(code, message)
+    @code, @message = code, message
+  end
 end
