@@ -38,5 +38,3 @@ class YandexTranslate
 		end
 	end
 end
-
-puts YandexTranslate.new.get_langs
