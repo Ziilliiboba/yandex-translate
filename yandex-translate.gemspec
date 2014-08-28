@@ -1,15 +1,14 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'yandex/translate/version'
+require 'yandex-translate/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "yandex-translate"
   spec.version       = Yandex::Translate::VERSION
   spec.authors       = ["Sergey Moyseenko"]
   spec.email         = ["cherrer@mail.ru"]
-  spec.summary       = "Yandex translator"
-  spec.description   = "Use yandex translate API to work"
+  spec.summary       = %q{Library to yanddex translate API}
+  spec.description   = %q{Yandex translate API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
