@@ -6,6 +6,7 @@ module Yandex::Translate
     def initialize(key)
       @connect = Yandex::Translate::Connect.new(key)
     end
+    
     def get_langs(lang = 'en')
       data = {"ui" => lang}
       return @connect.get('getLangs', data)

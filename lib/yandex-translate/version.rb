@@ -1,3 +1,5 @@
-module Yandex::Translate
-    VERSION = "0.0.3"
+module Yandex
+	module Translate
+    	VERSION = "0.0.3"
+    end
 end
