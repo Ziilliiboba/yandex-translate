@@ -1,4 +1,4 @@
-require './api_error'
+require 'api_error'
 
 module Yandex::Translate
   class ResponseVerify

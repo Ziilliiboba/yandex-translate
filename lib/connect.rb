@@ -1,6 +1,6 @@
 require 'json'
 require 'net/http'
-require './response_verify'
+require 'response_verify'
 
 module Yandex::Translate
   class Connect

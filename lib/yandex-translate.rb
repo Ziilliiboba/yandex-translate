@@ -1,5 +1,5 @@
 require "yandex-translate/version"
-require './connect'
+require 'connect'
 
 module Yandex::Translate
   class Client
